@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <meta charset="utf-8" />
     <title>Ruby</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/d3@5.9.2/dist/d3.min.js"></script>
 </head>
 
 <body>
@@ -25,8 +29,28 @@
         <p>Don't make her too dizzy!</p>
         <button type="button" id="rotate-left-button">Rotate Left</button>
         <button type="button" id="rotate-right-button">Rotate Right</button>
+<!-- Ruby Facts with accordion jqueryui-->
     </div>
-
+    <div id="accordionGroup">
+      <h1>Ruby's Hobbies</h1>
+      <div>
+        <p>
+          Sleeping, going on walks, staring out the window, and sleeping.
+          </p>
+      </div>
+      <h2>Ruby's Favorite Foods</h2>
+      <div>
+        <p>
+          Cheese, pizza, dog food, raw pasta, and bacon.
+          </p>
+      </div>
+      <h3>Ruby Hates</h3>
+      <div>
+        <p>
+          Thunder, baths, car rides, loud noises, and delivery/mail personnel
+        </p>
+      </div>
+    </div>
     <!-- Hide and Go Section -->
     <div id="hide-and-go">
         <h2>Ruby's disappearing act</h2>
@@ -61,7 +85,16 @@
         </div>
     </div>
 
+    <script>
+    $("#accordionGroup").accordion();
+      </script>
 <script src="add-functionality-ruby.js"></script>
+
+<span class="ruby bold" id="ruby">Impressed?</span>
+<p class="subheader">Refresh the page to see my enthusiasm</p>
+<svg width="960" height="500"></svg>
+<script src="bundle.js"></script>
 </body>
 
 </html>
+
